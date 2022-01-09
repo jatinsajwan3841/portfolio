@@ -1,0 +1,70 @@
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 24px;
+    gap: 20px;
+    flex: 1 0 auto;
+    .layout-left {
+        display: flex;
+        flex-direction: column;
+        width: 20vw;
+        gap: 10px;
+        .dp {
+            height: auto;
+            border-radius: 50%;
+            width: 20vw;
+            box-shadow: 0 0 6px grey;
+        }
+        .name {
+            font-size: 26px;
+            line-height: 30px;
+        }
+        .username {
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 24px;
+            color: #57606a;
+        }
+        .resume-link {
+            width: fit-content;
+            .resume-btn {
+                width: 100%;
+                padding: 5px 16px;
+                color: #24292f;
+                background-color: #f6f8fa;
+                border-color: #1b1f2426;
+                user-select: none;
+                border: 1px solid;
+                border-radius: 6px;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 20px;
+                white-space: nowrap;
+                vertical-align: middle;
+                cursor: pointer;
+            }
+        }
+        .email {
+            color: inherit;
+            text-decoration: none;
+        }
+    }
+    .layout-right {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        overflow: auto;
+    }
+}
+
+@media only screen and (max-width: 683px) {
+    .container {
+        .layout-left {
+            width: 100%;
+            .dp {
+                width: 50vw;
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.header {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding: 13px 16px;
+    background-color: #24292f;
+    z-index: 32;
+    font-size: 14px;
+    color: white;
+    .logo {
+        position: relative;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background-color: white;
+        margin-right: 10px;
+        &::after {
+            content: "JK";
+            position: absolute;
+            top: 5px;
+            left: 8px;
+            color: black;
+        }
+    }
+    .header-name {
+        font-size: medium;
+        font-weight: bold;
+    }
+}
