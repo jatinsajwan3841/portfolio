@@ -14,6 +14,7 @@ const Projects = () => {
                             href={v.projectLink}
                             className="title"
                             target="_blank"
+                            rel="noreferrer"
                         >
                             {v.title}
                         </a>
@@ -25,7 +26,12 @@ const Projects = () => {
                         </div>
                         <div className="time">{v.time}</div>
                     </div>
-                    <a href={v.deployedAt} className="right" target="_blank">
+                    <a
+                        href={v.deployedAt}
+                        className="right"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
                         <AiOutlineStar /> Live
                     </a>
                 </div>

@@ -12,12 +12,12 @@ const data = [
         link: "/projects",
     },
     {
-        name: "Work Experience",
-        link: "/experience",
-    },
-    {
         name: "Skills and Achievement",
         link: "/skill&achieve",
+    },
+    {
+        name: "Work Experience",
+        link: "/experience",
     },
 ];
 

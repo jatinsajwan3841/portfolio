@@ -8,4 +8,11 @@ export const TECH_MAPPING = {
     SCSS: "olive",
     Express: "tomato",
     Mongoose: "orange",
+    Bootstrap: "#5b9ddf",
+    Material: "#5b9ddf",
+    C: "#5b9ddf",
+    "C++": "#5b9ddf",
+    MongoDB: "greenyellow",
+    MySQL: "purple",
+    Git: "red",
 };
