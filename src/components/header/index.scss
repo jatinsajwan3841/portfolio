@@ -1,12 +1,17 @@
 .header {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
     padding: 13px 16px;
     background-color: #24292f;
     z-index: 32;
     font-size: 14px;
     color: white;
+    a {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        text-decoration: none;
+        color: inherit;
+        width: fit-content;
+    }
     .logo {
         position: relative;
         height: 30px;

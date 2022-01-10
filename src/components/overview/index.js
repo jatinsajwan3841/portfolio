@@ -1,10 +1,14 @@
 import React from "react";
+import ReactMarkdown from "react-markdown";
+import { DATA } from "./data";
 import { IoIosGitBranch } from "react-icons/io";
 import { BsTag } from "react-icons/bs";
 import { AiOutlineCaretDown } from "react-icons/ai";
 import { BsFileEarmark } from "react-icons/bs";
 import "./index.scss";
+
 const Overview = () => {
+    const [mdData, setMdData] = React.useState(DATA[0]);
     return (
         <div className="overview-container">
             <div className="overview-head">
@@ -45,19 +49,23 @@ const Overview = () => {
                     <span className="commit-msg">updated knowledge...</span>
                 </div>
                 <div className="table-body">
-                    <div className="tr">
-                        <BsFileEarmark />
-                        <span> Overview.md </span>
-                    </div>
-                    <div className="tr">
-                        <BsFileEarmark />
-                        <span> About.md </span>
-                    </div>
+                    {DATA.map((v, i) => (
+                        <div
+                            key={i}
+                            className="tr selector"
+                            onClick={() => setMdData(DATA[i])}
+                        >
+                            <BsFileEarmark />
+                            <span> {v.head} </span>
+                        </div>
+                    ))}
                 </div>
             </div>
             <div className="overview-table file-container">
-                <div className="table-head file-head">Overview.md</div>
-                <div className="tr file-data">check</div>
+                <div className="table-head file-head">{mdData.head}</div>
+                <div className="tr file-data">
+                    <ReactMarkdown children={mdData.content} />{" "}
+                </div>
             </div>
         </div>
     );

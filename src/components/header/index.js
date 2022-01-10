@@ -1,10 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./index.scss";
 const Header = () => {
     return (
         <div className="header">
-            <div className="logo"></div>
-            <div className="header-name">Jatin Kumar</div>
+            <Link to="/">
+                <div className="logo" />
+                <div className="header-name">Jatin Kumar</div>
+            </Link>
         </div>
     );
 };

@@ -1,6 +1,6 @@
 .container {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     padding: 24px;
     gap: 20px;
     flex: 1 0 auto;
@@ -9,6 +9,9 @@
         flex-direction: column;
         width: 20vw;
         gap: 10px;
+        svg {
+            vertical-align: middle;
+        }
         .dp {
             height: auto;
             border-radius: 50%;
@@ -29,13 +32,13 @@
         .resume-link {
             width: fit-content;
             .resume-btn {
+                border: 1px solid #1b1f2426;
+                cursor: pointer;
+                background-color: #f6f8fa;
                 width: 100%;
                 padding: 5px 16px;
                 color: #24292f;
-                background-color: #f6f8fa;
-                border-color: #1b1f2426;
                 user-select: none;
-                border: 1px solid;
                 border-radius: 6px;
                 font-size: 14px;
                 font-weight: 500;
@@ -45,8 +48,11 @@
                 cursor: pointer;
             }
         }
+        .tag-line {
+            width: 100%;
+        }
         .email {
-            color: inherit;
+            width: 100%;
             text-decoration: none;
         }
     }
@@ -55,15 +61,22 @@
         flex-direction: column;
         flex-grow: 1;
         overflow: auto;
+        gap: 20px;
     }
 }
 
 @media only screen and (max-width: 683px) {
     .container {
+        flex-wrap: wrap;
         .layout-left {
+            flex-flow: row wrap;
+            align-items: center;
             width: 100%;
             .dp {
-                width: 50vw;
+                width: 40vw;
+            }
+            .resume-link {
+                width: 100%;
             }
         }
     }

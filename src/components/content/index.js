@@ -41,12 +41,10 @@ const Content = () => {
                     Former SDE Intern @ Evolv Fit || GBPIET '22 || SSGK '18
                 </div>
                 <div className="address">
-                    <MdOutlineLocationOn />
-                    Uttarakhand, India
+                    <MdOutlineLocationOn /> Uttarakhand, India
                 </div>
                 <a href="mailto:jatinsajwan@hotmail.com" className="email">
-                    <MdOutlineEmail />
-                    jatinsajwan@hotmail.com
+                    <MdOutlineEmail /> jatinsajwan@hotmail.com
                 </a>
             </div>
             <div className="layout-right">
