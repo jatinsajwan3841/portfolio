@@ -8,12 +8,12 @@ const data = [
         link: "/",
     },
     {
-        name: "Projects",
-        link: "/projects",
-    },
-    {
         name: "Skills and Achievement",
         link: "/skill&achieve",
+    },
+    {
+        name: "Projects",
+        link: "/projects",
     },
     {
         name: "Work Experience",

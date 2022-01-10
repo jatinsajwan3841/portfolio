@@ -1,33 +1,18 @@
 export const DATA = [
     {
         head: "Overview.md",
-        content: `A paragraph with *emphasis* and **strong importance**.
-        ---
-    
-    - Lists
-    * [ ] todo
-    * [x] done
-    
-    A table:
-    
-    | a | b |
-    | - | - |
+        content: `I'm presently pursuing under graduation degree in B.Tech. and have
+        a keen eye on the software development domain. My work includes
+        in ReactJs, Express and Python. I have 5 star python badge on
+        HackerRank.
     `,
     },
     {
         head: "About.md",
-        content: `A paragraph with *emphasis* and **strong importance**.
-
-    > A block quote with ~strikethrough~ and a URL: https://reactjs.org.
-    
-    * Lists
-    * [ ] todo
-    * [x] done
-    
-    A table:
-    
-    | a | b |
-    | - | - |
+        content: `I'm presently pursuing under graduation degree in B.Tech. and have
+        a keen eye on the software development domain. My work includes
+        in ReactJs, Express and Python. I have 5 star python badge on
+        HackerRank.
     `,
     },
 ];
