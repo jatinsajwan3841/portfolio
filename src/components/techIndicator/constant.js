@@ -1,5 +1,5 @@
 export const TECH_MAPPING = {
-    Python: "black",
+    Python: "red",
     ReactJs: "green",
     JavaScript: "yellow",
     Redux: "blue",
@@ -14,5 +14,6 @@ export const TECH_MAPPING = {
     "C++": "#5b9ddf",
     MongoDB: "greenyellow",
     MySQL: "purple",
-    Git: "red",
+    Git: "maroon",
+    VSCode: "black",
 };
