@@ -1,7 +1,15 @@
 export const SKILLS_DATA = [
     {
         header: "Tools and Framework",
-        body: ["ReactJs", "Redux", "Express", "Mongoose", "Git", "VSCode"],
+        body: [
+            "ReactJs",
+            "Redux",
+            "Express",
+            "Mongoose",
+            "Git",
+            "VSCode",
+            "Postman",
+        ],
     },
     {
         header: "Programming Languages",

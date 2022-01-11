@@ -7,7 +7,7 @@ export const TECH_MAPPING = {
     CSS: "olive",
     SCSS: "olive",
     Express: "tomato",
-    Mongoose: "orange",
+    Mongoose: "greenyellow",
     Bootstrap: "#5b9ddf",
     Material: "#5b9ddf",
     C: "#5b9ddf",
@@ -16,4 +16,5 @@ export const TECH_MAPPING = {
     MySQL: "purple",
     Git: "maroon",
     VSCode: "black",
+    Postman: "orange",
 };
