@@ -95,6 +95,12 @@
         .file-data {
             word-wrap: break-word;
             overflow: auto;
+            li::marker {
+                content: "👉";
+            }
+            .stats-img {
+                max-width: 100%;
+            }
         }
     }
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import ReactMarkdown from "react-markdown";
+import rehypeRaw from "rehype-raw";
 import { DATA } from "./data";
 import { IoIosGitBranch } from "react-icons/io";
 import { BsTag } from "react-icons/bs";
@@ -23,7 +24,7 @@ const Overview = () => {
                     </div>
                     <div className="tabs hidden">
                         <BsTag />
-                        <span>hardworking</span>
+                        <span>Cheerful</span>
                     </div>
                 </div>
                 <a
@@ -64,7 +65,11 @@ const Overview = () => {
             <div className="overview-table file-container">
                 <div className="table-head file-head">{mdData.head}</div>
                 <div className="tr file-data">
-                    <ReactMarkdown children={mdData.content} />{" "}
+                    <ReactMarkdown
+                        children={mdData.content}
+                        skipHtml={false}
+                        rehypePlugins={[rehypeRaw]}
+                    />{" "}
                 </div>
             </div>
         </div>
