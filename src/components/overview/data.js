@@ -57,7 +57,7 @@ Here's the details reflecting my education record.
 Electronics and Communication Engineering  
 Govind Ballabh Pant Institute of Engineering and Technology  
 (2018 - 2022)  
-76.3%  
+78.08%  
 ---
 * *Senior School*  
 CBSE  

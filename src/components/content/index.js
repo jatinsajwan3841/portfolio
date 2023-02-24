@@ -38,7 +38,7 @@ const Content = () => {
                     <button className="resume-btn">Download Resume</button>
                 </a>
                 <div className="tag-line">
-                    Former SDE Intern @ Evolv Fit || GBPIET '22 || SSGK '18
+                    Systems Engineer @ TCS Digital || GBPIET '22 || SSGK '18
                 </div>
                 <div className="address">
                     <MdOutlineLocationOn /> Uttarakhand, India
