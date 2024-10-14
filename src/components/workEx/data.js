@@ -2,7 +2,7 @@ export const WORKEX_DATA = [
     {
         role: "Systems Engineer",
         company: "TCS Digital",
-        desc: "◦ Worked on end-to-end migration of the Xpert platform from AngularJS to ReactJS, improving performance
+        desc: `◦ Worked on end-to-end migration of the Xpert platform from AngularJS to ReactJS, improving performance
 and user experience for a globally-used recruiting tool.
 ◦ Developed and maintained frontend components using JavaScript, SCSS, HTML5, and ReactJS, ensuring
 cross-browser compatibility and responsiveness.
@@ -14,7 +14,7 @@ application stability.
 globe.
 ◦ Developed new APIs in Java to support platform enhancements, expanding functionality and streamlining
 processes for recruiters.
-◦ Utilized tools like VS Code, Eclipse, and Postman for efficient coding, debugging, and API testing.",
+◦ Utilized tools like VS Code, Eclipse, and Postman for efficient coding, debugging, and API testing.`,
         tech: [""],
         time: "August 2022 - Present",
     },
