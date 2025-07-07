@@ -1,0 +1,30 @@
+.sub-nav-container {
+    display: flex;
+    flex-flow: row nowrap;
+    overflow: auto;
+    border-bottom: 1px solid #d1d5da;
+    box-shadow: none;
+    height: fit-content;
+    .nav-item {
+        padding: 10px 8px;
+        margin-right: 16px;
+        font-size: 14px;
+        line-height: 1.5;
+        color: #586069;
+        text-align: center;
+        text-decoration: none;
+        white-space: nowrap;
+        background-color: initial;
+        border: 0;
+        border-bottom: 2px solid transparent;
+        &.active {
+            border-bottom: 2px solid #fd8c73;
+            &:hover {
+                border-bottom: 2px solid #fd8c73;
+            }
+        }
+        &:hover {
+            border-bottom: 2px solid rgba(128, 128, 128, 0.7);
+        }
+    }
+}

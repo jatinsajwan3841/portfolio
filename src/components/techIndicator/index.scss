@@ -1,0 +1,16 @@
+.indicator-container {
+    display: flex;
+    flex-flow: row nowrap;
+    .indicator {
+        height: 12px;
+        width: 12px;
+        border-radius: 50%;
+        background: transparent;
+        margin-top: 2px;
+    }
+    .tech-name {
+        font-size: 12px;
+        color: #57606a;
+        margin: 0 12px 0 4px;
+    }
+}

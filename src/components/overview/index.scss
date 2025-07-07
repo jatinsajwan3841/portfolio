@@ -1,0 +1,118 @@
+.overview-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .overview-head {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        .left {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            gap: 5px;
+            .tabs {
+                display: flex;
+                flex-flow: row nowrap;
+                gap: 2px;
+                padding: 5px 10px;
+                border-radius: 6px;
+                svg {
+                    margin-top: 3px;
+                    vertical-align: bottom;
+                }
+            }
+            .branch-select {
+                padding: 3px 15px;
+                border: 1px solid #1b1f2426;
+                cursor: pointer;
+                background-color: #f6f8fa;
+            }
+        }
+        .resume-btn {
+            width: 100%;
+            padding: 5px 16px;
+            color: white;
+            border-color: #1b1f2426;
+            user-select: none;
+            border: 1px solid;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            white-space: nowrap;
+            vertical-align: middle;
+            align-items: center;
+            cursor: pointer;
+            background-color: #2da44e;
+            svg {
+                vertical-align: middle;
+            }
+        }
+    }
+    .overview-table {
+        border-radius: 6px;
+        border: 1px solid #d0d7de;
+        .table-head {
+            display: flex;
+            flex-direction: row;
+            gap: 12px;
+            background-color: #f6f8fa;
+            border-bottom: 1px solid #d0d7de;
+            padding: 10px 16px;
+            overflow: hidden;
+            .commit-dp {
+                height: 24px;
+                width: 24px;
+                border-radius: 50%;
+                box-shadow: 0 0 2px grey;
+            }
+            .commit-user {
+                font-weight: 600;
+                color: #24292f;
+                white-space: nowrap;
+            }
+            .commit-msg {
+                font-size: medium;
+                color: #586069;
+                white-space: nowrap;
+            }
+        }
+        .tr {
+            justify-content: center;
+            padding: 8px 16px;
+            border-bottom: 1px solid #d0d7de;
+        }
+        .selector {
+            cursor: pointer;
+            &:hover {
+                text-decoration: underline;
+                color: blue;
+            }
+        }
+        .file-data {
+            word-wrap: break-word;
+            overflow: auto;
+            li::marker {
+                content: "👉";
+            }
+            .stats-img {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    .overview-container {
+        .overview-head {
+            .left {
+                .hidden {
+                    display: none;
+                }
+            }
+        }
+    }
+}
